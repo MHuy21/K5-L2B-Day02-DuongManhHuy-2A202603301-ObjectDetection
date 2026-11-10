@@ -4,11 +4,11 @@
 
 ## 1. Thông tin học viên
 
-- Họ tên:
-- MSSV:
-- Email:
-- Lớp:
-- Link repo bài làm:
+- Họ tên: Dương Mạnh Huy
+- MSSV: `2A202603301`
+- Email: **manhhuy2104@gmail.com**
+- Lớp: L2B
+- Link repo bài làm: [github.com/MHuy21/K5-L2B-Day02-DuongManhHuy-2A202603301-ObjectDetection.git](https://github.com/MHuy21/K5-L2B-Day02-DuongManhHuy-2A202603301-ObjectDetection.git)
 - Link Colab đã chạy:
 
 ## 2. Schema và mini guideline
@@ -17,24 +17,24 @@ Dẫn tới [GUIDELINE_MINI.md](../../GUIDELINE_MINI.md). Tóm tắt ba ca mơ h
 
 ## 3. Annotation và self-QC
 
-- Số file nhãn train:
-- Kết quả checker và lỗi đã xử lý:
-- Danh sách ít nhất 10 ảnh đã rà bằng mắt:
-- Lỗi bỏ sót/box/class phát hiện khi rà và cách sửa:
+- Số file nhãn train: 50/50 (`dataset/labels/train/drive_001.txt` → `drive_050.txt`), tổng 999 box: car 800, truck 21, bus 105, van 73.
+- Kết quả checker và lỗi đã xử lý: `tools/check_yolo_labels.py` ĐẠT cấu trúc 50/50.
+- Danh sách ít nhất 10 ảnh đã rà bằng mắt: `drive_003`, `drive_026`, `drive_038`, `drive_039`, `drive_030`, `drive_012`, `drive_022`, `drive_042`, `drive_047`, `drive_013` .
+- Lỗi bỏ sót/box/class phát hiện khi rà và cách sửa: không phát hiện lỗi bỏ sót.
 - Commit khóa nhãn ban đầu:
 
 ## 4. Gold QC và rework
 
-| Chỉ số | Trước sửa | Sau sửa nếu có |
-|---|---:|---:|
-| TP | | |
-| FP | | |
-| FN | | |
-| Precision | | |
-| Recall | | |
-| F1 | | |
-| mean_iou_of_matches | | |
-| passed | | |
+| Chỉ số              | Trước sửa | Sau sửa nếu có |
+| ------------------- | --------: | -------------: |
+| TP                  |           |                |
+| FP                  |           |                |
+| FN                  |           |                |
+| Precision           |           |                |
+| Recall              |           |                |
+| F1                  |           |                |
+| mean_iou_of_matches |           |                |
+| passed              |           |                |
 
 Dẫn tới `outputs/annotation_evaluation.json` trong repo. Nếu rework, ghi ảnh, lỗi đã kiểm, quyết định sửa/giữ và lý do. Không suy nguyên nhân chỉ từ FP/FN. Không có rework thì ghi rõ.
 
@@ -45,11 +45,11 @@ Dẫn tới `outputs/annotation_evaluation.json` trong repo. Nếu rework, ghi �
 - Đường dẫn best checkpoint trong phiên chạy:
 
 | Chỉ số trên 10 ảnh eval | Giá trị |
-|---|---:|
-| Precision | |
-| Recall | |
-| mAP50 | |
-| mAP50–95 | |
+| ----------------------- | ------: |
+| Precision               |         |
+| Recall                  |         |
+| mAP50                   |         |
+| mAP50–95                |         |
 
 Đặt cả 2 folder `assets/eval_predictions/` và `assets/yolo26_runs/` (giải nén từ `day2_colab_outputs.zip`) cạnh báo cáo và dẫn link tương đối. Không chỉ ghi số; chỉ ra ít nhất một ảnh và vật thể cụ thể.
 
@@ -63,8 +63,8 @@ Trả lời bốn câu hỏi cuối notebook:
 ## 6. Khó khăn và cách xử lý
 
 | Bước/thời điểm | Lỗi quan sát | Cách đã thử | Kết quả/còn thiếu |
-|---|---|---|---|
-| | | | |
+| -------------- | ------------ | ----------- | ----------------- |
+|                |              |             |                   |
 
 ## 7. Tự đánh giá theo rubric
 
